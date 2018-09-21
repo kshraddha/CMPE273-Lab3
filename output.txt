@@ -1,0 +1,26 @@
+###Connected UDP
+
+ska01scl:lab3 skabade$ python3 connected_udp_server.py 
+received b'hello' from ('127.0.0.1', 59507)
+
+
+ska01scl:lab3 skabade$ python3 connected_udp_client.py 
+now we can only send to host 127.0.0.1 port 1234
+received b'hello' from ('127.0.0.1', 1234)
+
+
+### Multicast UDP
+
+ska01scl:lab3 skabade$ python3 multicast_udp_server.py 
+Datagram b'Client: Ping' received from ('10.238.11.76', 8005)
+Datagram b'Server: Pong' received from ('10.238.11.76', 8005)
+
+ska01scl:lab3 skabade$ python3 multicast_udp_client.py
+Datagram b'Client: Ping' received from ('10.238.11.76', 8005)
+
+
+### If server is not up
+
+ska01scl:lab3 skabade$ python3 multicast_udp_client.py
+Datagram b'Client: Ping' received from ('10.238.11.76', 8005)
+
